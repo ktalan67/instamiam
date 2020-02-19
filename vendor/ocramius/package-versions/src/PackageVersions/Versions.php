@@ -12,7 +12,7 @@ namespace PackageVersions;
  */
 final class Versions
 {
-    public const ROOT_PACKAGE_NAME = 'symfony/website-skeleton';
+    public const ROOT_PACKAGE_NAME = '__root__';
     /**
      * Array of all available composer packages.
      * Dont read this array from your calling code, but use the \PackageVersions\Versions::getVersion() method instead.
@@ -115,7 +115,10 @@ final class Versions
   'webmozart/assert' => '1.7.0@aed98a490f9a8f78468232db345ab9cf606cf598',
   'zendframework/zend-code' => '3.4.1@268040548f92c2bfcba164421c1add2ba43abaaa',
   'zendframework/zend-eventmanager' => '3.2.1@a5e2583a211f73604691586b8406ff7296a946dd',
+  'doctrine/data-fixtures' => '1.4.2@39e9777c9089351a468f780b01cffa3cb0a42907',
+  'doctrine/doctrine-fixtures-bundle' => '3.3.0@8f07fcfdac7f3591f3c4bf13a50cbae05f65ed70',
   'easycorp/easy-log-handler' => 'v1.0.9@224e1dfcf9455aceee89cd0af306ac097167fac1',
+  'fzaninotto/faker' => 'v1.9.1@fc10d778e4b84d5bd315dad194661e091d307c6f',
   'nikic/php-parser' => 'v4.3.0@9a9981c347c5c49d6dfe5cf826bb882b824080dc',
   'symfony/browser-kit' => 'v5.0.4@b0294489a7fbb4f3f39c39efe6f0328cb09731b9',
   'symfony/css-selector' => 'v5.0.4@ff60c90cb7950b592ebc84ad1289d0345bf24f9f',
@@ -127,14 +130,14 @@ final class Versions
   'symfony/profiler-pack' => 'v1.0.4@99c4370632c2a59bb0444852f92140074ef02209',
   'symfony/test-pack' => 'v1.0.6@ff87e800a67d06c423389f77b8209bc9dc469def',
   'symfony/web-profiler-bundle' => 'v5.0.4@8f4831567fc39bbe42af415a14a6039621349787',
-  'paragonie/random_compat' => '2.*@',
-  'symfony/polyfill-ctype' => '*@',
-  'symfony/polyfill-iconv' => '*@',
-  'symfony/polyfill-php72' => '*@',
-  'symfony/polyfill-php71' => '*@',
-  'symfony/polyfill-php70' => '*@',
-  'symfony/polyfill-php56' => '*@',
-  'symfony/website-skeleton' => 'v5.0.99@',
+  'paragonie/random_compat' => '2.*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  'symfony/polyfill-ctype' => '*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  'symfony/polyfill-iconv' => '*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  'symfony/polyfill-php72' => '*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  'symfony/polyfill-php71' => '*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  'symfony/polyfill-php70' => '*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  'symfony/polyfill-php56' => '*@e71f56935ccb5c66c59c9435cdc164855ca204f9',
+  '__root__' => 'dev-master@e71f56935ccb5c66c59c9435cdc164855ca204f9',
 );
 
     private function __construct()
