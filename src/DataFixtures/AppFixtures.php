@@ -30,7 +30,7 @@ class AppFixtures extends Fixture
         $faker->addProvider(new InstamiamProvider($faker));
 
         // 1. On crée d'abord les entités à relier
-
+        $usersList = [];
         // Les Users
         $admin = new User();
         $admin->setUsername('admin');
@@ -38,15 +38,17 @@ class AppFixtures extends Fixture
         $admin->setPassword('admin');
         $admin->setRoleId(1);
         $admin->setIsActive(1);
+        $usersList[] = $admin;
         $manager->persist($admin);
 
-        $user = new User();
-        $user->setUsername('user');
-        $user->setEmail('user@user.com');
-        $user->setPassword('user');
-        $user->setRoleId(2);
-        $user->setIsActive(1);
-        $manager->persist($user);
+        $newuser = new User();
+        $newuser->setUsername('user');
+        $newuser->setEmail('user@user.com');
+        $newuser->setPassword('user');
+        $newuser->setRoleId(2);
+        $newuser->setIsActive(1);
+        $usersList[] = $newuser;
+        $manager->persist($newuser);
 
         $ok = new User();
         $ok->setUsername('ok');
@@ -54,6 +56,7 @@ class AppFixtures extends Fixture
         $ok->setPassword('ok');
         $ok->setRoleId(2);
         $ok->setIsActive(1);
+        $usersList[] = $ok;
         $manager->persist($ok);
 
 
@@ -126,10 +129,17 @@ class AppFixtures extends Fixture
             for ($count = 1; $count <= mt_rand(1, 3); $count++) {
                 // Allons chercher un index au hasard entre 0 et la fin du tableau
                 $randomGenreIndex = mt_rand(0, count($genresList) - 1);
+                $randomIngredientIndex = mt_rand(0, count($ingredientsList) - 1);
+                $randomEvenementIndex = mt_rand(0, count($evenementsList) - 1);
+                $randomTempsIndex = mt_rand(0, count($tempsList) - 1);
+                $randomUserIndex = mt_rand(0, count($usersList) - 1);
+
                 // Associons ce genre à la recette
                 $recette->addGenre($genresList[$randomGenreIndex]);
-                $recette->addIngredient($ingredientsList[$randomGenreIndex]);
-                $recette->addEvenement($evenementsList[$randomGenreIndex]);
+                $recette->addIngredient($ingredientsList[$randomIngredientIndex]);
+                $recette->addEvenement($evenementsList[$randomEvenementIndex]);
+                $recette->setTemps($tempsList[$randomTempsIndex]);
+                $recette->setuser($usersList[$randomUserIndex]);
                 $recette->setPrix(10);
                 $recette->setLikes(mt_rand(1, 10));
                 $recette->setNote(mt_rand(1, 20));
