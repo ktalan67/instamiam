@@ -81,11 +81,13 @@ class InstamiamProvider extends Base
     ];
 
     protected static $photos = [
-        '1.jpg',
-        '2.jpg',
-        '3.jpg',
-        '4.jpg',
-        '5.jpg',
+        '0001.png',
+        '0002.png',
+        '0003.png',
+        '0004.png',
+        '0005.png',
+        '0006.png',
+        '0007.png',
     ];
 
     public static function recetteNom()

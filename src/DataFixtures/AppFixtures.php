@@ -9,7 +9,6 @@ use App\Entity\Recette;
 use App\Entity\Ingredient;
 use App\Entity\Evenement;
 use App\Entity\Temps;
-use App\Entity\Photo;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use App\DataFixtures\Provider\InstamiamProvider;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -37,6 +36,7 @@ class AppFixtures extends Fixture
         $admin->setEmail('admin@admin.com');
         $admin->setPassword('admin');
         $admin->setRoleId(1);
+        $admin->setImageFilename('0001.png');
         $admin->setIsActive(1);
         $usersList[] = $admin;
         $manager->persist($admin);
@@ -46,6 +46,7 @@ class AppFixtures extends Fixture
         $newuser->setEmail('user@user.com');
         $newuser->setPassword('user');
         $newuser->setRoleId(2);
+        $newuser->setImageFilename('0002.png');
         $newuser->setIsActive(1);
         $usersList[] = $newuser;
         $manager->persist($newuser);
@@ -55,6 +56,7 @@ class AppFixtures extends Fixture
         $ok->setEmail('ok');
         $ok->setPassword('ok');
         $ok->setRoleId(2);
+        $ok->setImageFilename('0003.png');
         $ok->setIsActive(1);
         $usersList[] = $ok;
         $manager->persist($ok);
@@ -139,6 +141,7 @@ class AppFixtures extends Fixture
                 $recette->addIngredient($ingredientsList[$randomIngredientIndex]);
                 $recette->addEvenement($evenementsList[$randomEvenementIndex]);
                 $recette->setTemps($tempsList[$randomTempsIndex]);
+                $recette->setPhoto($faker->photoLink());
                 $recette->setuser($usersList[$randomUserIndex]);
                 $recette->setPrix(10);
                 $recette->setLikes(mt_rand(1, 10));
@@ -149,14 +152,6 @@ class AppFixtures extends Fixture
 
             // On persiste
             $manager->persist($recette);
-        }
-
-        // Une photo
-        for ($i = 0; $i < 10; $i++) {
-            // Une photo
-            $photo = new Photo();
-            $photo->setLink($faker->photoLink());
-            $manager->persist($photo);
         }
         // On sauve en BDD
         $manager->flush();

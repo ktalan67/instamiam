@@ -12,7 +12,7 @@ use Doctrine\Common\Persistence\ManagerRegistry;
  * @method Ingredient[]    findAll()
  * @method Ingredient[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class IngredientsRepository extends ServiceEntityRepository
+class IngredientRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
@@ -20,7 +20,7 @@ class IngredientsRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Ingredients[] Returns an array of Ingredients objects
+    //  * @return Ingredient[] Returns an array of Ingredients objects
     //  */
     /*
     public function findByExampleField($value)

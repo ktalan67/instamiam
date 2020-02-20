@@ -39,6 +39,11 @@ class Recette
     private $note;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $photo;
+
+    /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Genre", inversedBy="recettes")
      */
     private $genres;
@@ -225,4 +230,16 @@ class Recette
         return $this;
     }
 
+
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+
+        return $this;
+    }
 }

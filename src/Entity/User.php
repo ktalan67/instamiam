@@ -34,6 +34,12 @@ class User
     private $password;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $imageFilename;
+
+
+    /**
      * @ORM\Column(type="integer")
      */
     private $role_id;
@@ -51,6 +57,11 @@ class User
     public function __construct()
     {
         $this->recettes = new ArrayCollection();
+    }
+
+    public function __toString()
+    {
+        return $this->username;
     }
 
     public function getId(): ?int
@@ -145,6 +156,18 @@ class User
                 $recette->setUser(null);
             }
         }
+
+        return $this;
+    }
+    
+    public function getImageFilename()
+    {
+        return $this->imageFilename;
+    }
+
+    public function setImageFilename($imageFilename)
+    {
+        $this->imageFilename = $imageFilename;
 
         return $this;
     }
