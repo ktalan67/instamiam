@@ -66,10 +66,10 @@ class User extends \App\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\User' . "\0" . 'id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'username', '' . "\0" . 'App\\Entity\\User' . "\0" . 'email', '' . "\0" . 'App\\Entity\\User' . "\0" . 'password', '' . "\0" . 'App\\Entity\\User' . "\0" . 'image_profile', '' . "\0" . 'App\\Entity\\User' . "\0" . 'role_id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'is_active', '' . "\0" . 'App\\Entity\\User' . "\0" . 'recettes'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\User' . "\0" . 'id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'username', '' . "\0" . 'App\\Entity\\User' . "\0" . 'email', '' . "\0" . 'App\\Entity\\User' . "\0" . 'password', '' . "\0" . 'App\\Entity\\User' . "\0" . 'imageFilename', '' . "\0" . 'App\\Entity\\User' . "\0" . 'role_id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'is_active', '' . "\0" . 'App\\Entity\\User' . "\0" . 'recettes'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\User' . "\0" . 'id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'username', '' . "\0" . 'App\\Entity\\User' . "\0" . 'email', '' . "\0" . 'App\\Entity\\User' . "\0" . 'password', '' . "\0" . 'App\\Entity\\User' . "\0" . 'image_profile', '' . "\0" . 'App\\Entity\\User' . "\0" . 'role_id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'is_active', '' . "\0" . 'App\\Entity\\User' . "\0" . 'recettes'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\User' . "\0" . 'id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'username', '' . "\0" . 'App\\Entity\\User' . "\0" . 'email', '' . "\0" . 'App\\Entity\\User' . "\0" . 'password', '' . "\0" . 'App\\Entity\\User' . "\0" . 'imageFilename', '' . "\0" . 'App\\Entity\\User' . "\0" . 'role_id', '' . "\0" . 'App\\Entity\\User' . "\0" . 'is_active', '' . "\0" . 'App\\Entity\\User' . "\0" . 'recettes'];
     }
 
     /**
@@ -348,23 +348,23 @@ class User extends \App\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getImage_profile()
+    public function getImageFilename()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage_profile', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImageFilename', []);
 
-        return parent::getImage_profile();
+        return parent::getImageFilename();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function setImage_profile($image_profile)
+    public function setImageFilename($imageFilename)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImage_profile', [$image_profile]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImageFilename', [$imageFilename]);
 
-        return parent::setImage_profile($image_profile);
+        return parent::setImageFilename($imageFilename);
     }
 
 }
