@@ -227,6 +227,6 @@ class __TwigTemplate_63b5ed1de4ce80adb7cfe953c9bae747b5664214f1d4d5a97ff00f94e24
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/var/www/html/instamiam/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

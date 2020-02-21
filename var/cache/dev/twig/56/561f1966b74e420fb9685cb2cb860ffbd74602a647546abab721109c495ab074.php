@@ -168,6 +168,6 @@ class __TwigTemplate_c5f16f84769b0a244ae4178cf9bb23101217a21df1d52e409ccfe089413
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: false }) }}
 {% endblock %}
-", "@WebProfiler/Collector/ajax.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/vendor/symfony/web-profiler-bundle/Resources/views/Collector/ajax.html.twig");
+", "@WebProfiler/Collector/ajax.html.twig", "/var/www/html/instamiam/vendor/symfony/web-profiler-bundle/Resources/views/Collector/ajax.html.twig");
     }
 }

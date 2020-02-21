@@ -140,6 +140,6 @@ class __TwigTemplate_78dc413abb6a27aee2e1182780fbcd971498486cfc83110e0cc08653b98
 
     {{ include('user/_delete_form.html.twig') }}
 {% endblock %}
-", "user/edit.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/user/edit.html.twig");
+", "user/edit.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/user/edit.html.twig");
     }
 }

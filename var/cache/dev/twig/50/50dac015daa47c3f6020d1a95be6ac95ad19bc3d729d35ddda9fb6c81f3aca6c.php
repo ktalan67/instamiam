@@ -133,6 +133,6 @@ class __TwigTemplate_946fc0f9592981a5516283eb2612a72d0953c274fb6d325cc940d257ac2
 
     <a href=\"{{ path('recette_index') }}\">back to list</a>
 {% endblock %}
-", "recette/new.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/recette/new.html.twig");
+", "recette/new.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/recette/new.html.twig");
     }
 }

@@ -471,6 +471,6 @@ class __TwigTemplate_7211e37a68f025944c3ed13cdd651a3b4351fb966db3581f9c8cfc69f54
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "/var/www/html/instamiam/vendor/symfony/web-profiler-bundle/Resources/views/Collector/twig.html.twig");
     }
 }

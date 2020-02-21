@@ -81,6 +81,6 @@ class __TwigTemplate_edbd83fcbfed584738ae1b53f8f1478aafab6533d8746310b30c48a36a6
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ recette.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "recette/_delete_form.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/recette/_delete_form.html.twig");
+", "recette/_delete_form.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/recette/_delete_form.html.twig");
     }
 }

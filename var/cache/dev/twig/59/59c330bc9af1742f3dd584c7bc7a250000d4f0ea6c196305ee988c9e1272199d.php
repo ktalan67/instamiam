@@ -898,6 +898,6 @@ class __TwigTemplate_f880ae47dbe28bb0ddd050433b8bee976c6a6f64985076f8b0b27371afc
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/var/www/html/instamiam/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

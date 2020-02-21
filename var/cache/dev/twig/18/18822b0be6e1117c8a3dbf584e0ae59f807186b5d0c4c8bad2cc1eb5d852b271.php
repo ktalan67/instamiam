@@ -133,6 +133,6 @@ class __TwigTemplate_a9653a2aa9bc165f67577c4cfa87d399f245ba21adc6a31285982a3834b
 
     <a href=\"{{ path('user_index') }}\">back to list</a>
 {% endblock %}
-", "user/new.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/user/new.html.twig");
+", "user/new.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/user/new.html.twig");
     }
 }

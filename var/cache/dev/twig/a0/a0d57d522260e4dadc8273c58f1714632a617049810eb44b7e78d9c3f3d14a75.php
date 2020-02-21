@@ -226,6 +226,6 @@ class __TwigTemplate_e7c5aec9ec3a30830529d522f029b2e909945be5918ff0ee59bfe0f8a73
 
     <a href=\"{{ path('recette_new') }}\">Create new</a>
 {% endblock %}
-", "recette/index.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/recette/index.html.twig");
+", "recette/index.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/recette/index.html.twig");
     }
 }

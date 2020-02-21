@@ -173,6 +173,6 @@ class __TwigTemplate_c9e2e957f3fa0efcd33df159693291808871b3d16aed1db9b68f3dfe926
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/base.html.twig");
+", "base.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/base.html.twig");
     }
 }

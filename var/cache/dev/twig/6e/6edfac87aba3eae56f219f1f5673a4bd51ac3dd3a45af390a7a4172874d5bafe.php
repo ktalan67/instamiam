@@ -81,6 +81,6 @@ class __TwigTemplate_d1bfca6b8195e2ea2d0279c910a36cbed030e32ba278c7572384d8b6d82
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ user.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "user/_delete_form.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/user/_delete_form.html.twig");
+", "user/_delete_form.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/user/_delete_form.html.twig");
     }
 }

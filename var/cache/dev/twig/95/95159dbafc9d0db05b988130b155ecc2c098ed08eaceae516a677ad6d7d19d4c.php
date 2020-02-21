@@ -1843,6 +1843,6 @@ class __TwigTemplate_3651ecb99c0552262237dd78fc140d0a744d1953de267ae9ee40b7996e5
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/var/www/html/instamiam/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

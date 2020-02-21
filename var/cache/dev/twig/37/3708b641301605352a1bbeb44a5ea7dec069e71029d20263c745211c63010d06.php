@@ -86,6 +86,6 @@ class __TwigTemplate_cdeb597b56dd5d2f21493d8af59ff611e773436a41511571c4199e35d2c
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
 
-", "user/_form.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/user/_form.html.twig");
+", "user/_form.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/user/_form.html.twig");
     }
 }

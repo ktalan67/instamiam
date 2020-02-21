@@ -238,6 +238,6 @@ class __TwigTemplate_f500af3b97d69db3c987212f49ecf1a4f9351d7981dc470f6eb77baf55b
 
     <a href=\"{{ path('user_new') }}\">Create new</a>
 {% endblock %}
-", "user/index.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/INSTAMIAM/templates/user/index.html.twig");
+", "user/index.html.twig", "/Library/WebServer/Documents/html/PROJET - INSTAMIAM/new/instamiam/templates/user/index.html.twig");
     }
 }
